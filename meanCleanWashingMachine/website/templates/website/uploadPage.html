@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block loadStatic %}{% load static %}{%endblock%}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+    <p>Here, you can upload a picture of your care tag that we can identify:</p>
+
+        <div class="container">
+
+          <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+              <label for="title">Title:</label><input type="text" name="title"><br>
+                <input type="file" name="upload" accept="image/*">
+                <br>
+                <button type="submit">Submit</button>
+          </form>
+
+          <!--See Image Uploaded-->
+          <h2>Image</h2>
+          <div >
+            {% if file_url %}
+            <div>
+              <img style='height:100px;' src="{{ file_url }}" class="img-fluid">
+              <br>
+              <a href="/">Return to Homepage</a>
+            {% else %}
+            <p>Nothing Uploaded.</p>
+            {% endif %}
+          </div>
+
+<svg id='wave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,192L26.7,192C53.3,192,107,192,160,170.7C213.3,149,267,107,320,101.3C373.3,96,427,128,480,122.7C533.3,117,587,75,640,90.7C693.3,107,747,181,800,213.3C853.3,245,907,235,960,192C1013.3,149,1067,75,1120,80C1173.3,85,1227,171,1280,181.3C1333.3,192,1387,128,1413,96L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>{% endblock %}

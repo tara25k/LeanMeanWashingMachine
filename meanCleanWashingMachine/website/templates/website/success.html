@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block loadStatic %}{% load static %}{%endblock%}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+  <header class="masthead">
+    <div class="container">
+    <div class="masthead-subheading">Successfully Uploaded!</div>
+      </div>
+    </header>
+          <!--See Image Uploaded-->
+    <ul>
+        {% for description in descriptionArray %}
+        <li>{{description}}</li>
+        {% endfor %}
+    </ul>
+
+
+
+
+
+{% endblock %}

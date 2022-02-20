@@ -1,0 +1,461 @@
+[
+{
+ "model": "data.data",
+ "pk": 4,
+ "fields": {
+  "Name": "Bleach",
+  "Description": "This  item can be bleached",
+  "Image": "bleach.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 5,
+ "fields": {
+  "Name": "chlorineBleach",
+  "Description": "You can use chlorine bleach on this item",
+  "Image": "ChlorineBleach.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 6,
+ "fields": {
+  "Name": "doNotBleach",
+  "Description": "You cannot use bleach on this item",
+  "Image": "DoNotBleach.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 7,
+ "fields": {
+  "Name": "doNotDry",
+  "Description": "Don't dry idk",
+  "Image": "DoNotDry.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 8,
+ "fields": {
+  "Name": "doNotIron",
+  "Description": "You can't use an iron on this piece of this clothing",
+  "Image": "DoNotIron.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 9,
+ "fields": {
+  "Name": "doNotSteam",
+  "Description": "Do not use a steamer of this piece of clothing",
+  "Image": "DoNotSteam.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 10,
+ "fields": {
+  "Name": "doNotTrumbleDry",
+  "Description": "Do not use a tumble dryer to dry this piece of clothing",
+  "Image": "DoNotTumbleDry.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 11,
+ "fields": {
+  "Name": "doNotWash",
+  "Description": "This piece of item does not need washing",
+  "Image": "DoNotWash.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 12,
+ "fields": {
+  "Name": "doNotWring",
+  "Description": "Do not wring this piece of clothing",
+  "Image": "DoNotWring.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 13,
+ "fields": {
+  "Name": "dripDry",
+  "Description": "Dry this item by hanging",
+  "Image": "DripDry.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 14,
+ "fields": {
+  "Name": "dripDryInShade",
+  "Description": "Dry this item by hanging it, specifically in the shade (NOT in sunlight)",
+  "Image": "DripDryInShade.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 15,
+ "fields": {
+  "Name": "dryClean",
+  "Description": "This item can be dry cleaned",
+  "Image": "DryClean.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 16,
+ "fields": {
+  "Name": "dryCleanAnySolvent",
+  "Description": "You can use any solvent to dry clean this item",
+  "Image": "DryCleanAnySolvent.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 17,
+ "fields": {
+  "Name": "dryCleanPetroSolvent",
+  "Description": "You must use Petro solvent to dry clean this item of clothing",
+  "Image": "DryCleanPetroSolvent.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 18,
+ "fields": {
+  "Name": "dryFlat",
+  "Description": "When drying this item, ensure it is flat",
+  "Image": "DryFlat.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 19,
+ "fields": {
+  "Name": "dryFlatInShade",
+  "Description": "When drying this item, ensure it is flat AND ensure it is in the shade (not in sunlight)",
+  "Image": "DryFlatInShade.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 20,
+ "fields": {
+  "Name": "iron",
+  "Description": "This item can be ironed",
+  "Image": "Iron.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 21,
+ "fields": {
+  "Name": "ironHighTemp",
+  "Description": "This item can withstand high temperatures with ironing",
+  "Image": "IronHighTemp.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 22,
+ "fields": {
+  "Name": "ironLowTemp",
+  "Description": "This item can only withstand low temperatures when ironing",
+  "Image": "ironLowTemp.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 23,
+ "fields": {
+  "Name": "ironMediumTemp",
+  "Description": "This item can withstand medium temperatures when ironing",
+  "Image": "IronMediumTemp.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 24,
+ "fields": {
+  "Name": "lineDry",
+  "Description": "Dry this item with a drying line",
+  "Image": "LineDry.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 25,
+ "fields": {
+  "Name": "lineDryInShade",
+  "Description": "Dry this item with a drying line in the shade (not in sunlight)",
+  "Image": "LineDryInShade.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 26,
+ "fields": {
+  "Name": "machineWashDelicate",
+  "Description": "Ensure the washing machine is set to delicate when washing this item",
+  "Image": "MachineWashDelicate.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 27,
+ "fields": {
+  "Name": "machineWashPersonalPress",
+  "Description": "You can use a permanent press to wash this item of clothing",
+  "Image": "MachineWashPersonalPress.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 28,
+ "fields": {
+  "Name": "naturalDry",
+  "Description": "Dry this item of clothing naturally",
+  "Image": "NaturalDry.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 29,
+ "fields": {
+  "Name": "nonChlorineBleach",
+  "Description": "Do not use chlorine bleach with this item",
+  "Image": "NonChlorineBleach.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 30,
+ "fields": {
+  "Name": "normalHandWash",
+  "Description": "Wash this item of clothing by hand",
+  "Image": "normalHandWash.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 31,
+ "fields": {
+  "Name": "normalMachineWash",
+  "Description": "Wash this item of clothing normally with a washing machine",
+  "Image": "normalMachineWash.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 32,
+ "fields": {
+  "Name": "shadeDry",
+  "Description": "Dry this item of clothing in the shade",
+  "Image": "ShadeDry.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 33,
+ "fields": {
+  "Name": "steam",
+  "Description": "You can use a steamer on this item of clothing",
+  "Image": "steam.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 34,
+ "fields": {
+  "Name": "completeGuide",
+  "Description": "The complete guide of all symbols",
+  "Image": "The-complete-care-label-gude.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 35,
+ "fields": {
+  "Name": "tumbleDryHighTemp",
+  "Description": "This item can withstand high temperatures with tumble drying",
+  "Image": "TumbleDryHighTemp.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 36,
+ "fields": {
+  "Name": "tumbleDryLowTemp",
+  "Description": "This item can only withstand low temperatures with tumble drying",
+  "Image": "TumbleDryLowTemp.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 37,
+ "fields": {
+  "Name": "tumbleDryMediumTemp",
+  "Description": "This item can withstand medium with tumble drying",
+  "Image": "TumbleDryMediumTemp.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 38,
+ "fields": {
+  "Name": "tumbleNoHeat",
+  "Description": "When tumble drying, ensure the machine is configured to have no heat",
+  "Image": "TumbleDryNoHeat.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 39,
+ "fields": {
+  "Name": "tumbleDryNormal",
+  "Description": "Use normal tumble drying settings for this item clothing",
+  "Image": "TumbleDryNormal.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 40,
+ "fields": {
+  "Name": "washAtOrBelow30",
+  "Description": "Wash this item at with water at 30 degrees or less",
+  "Image": "WashAtOrBelow30.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 41,
+ "fields": {
+  "Name": "washAtOrBelow30Dot",
+  "Description": "Wash this item at with water at 30 degrees or less",
+  "Image": "WashAtOrBelow30Dot.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 42,
+ "fields": {
+  "Name": "washAtOrBelow40",
+  "Description": "Wash this item at with water at 40 degrees or less",
+  "Image": "WashAtOrBelow40.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 43,
+ "fields": {
+  "Name": "washAtOrBelow40Dot",
+  "Description": "Wash this item at with water at 40 degrees or less",
+  "Image": "WashAtOrBelow40Dot.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 44,
+ "fields": {
+  "Name": "washAtOrBelow50",
+  "Description": "Wash this item at with water at 50 degrees or less",
+  "Image": "WashAtOrBelow50.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 45,
+ "fields": {
+  "Name": "washAtOrBelow50Dot",
+  "Description": "Wash this item at with water at 50 degrees or less",
+  "Image": "WashAtOrBelow50Dot.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 46,
+ "fields": {
+  "Name": "washAtOrBelow60",
+  "Description": "Wash this item at with water at 60 degrees or less",
+  "Image": "WashAtOrBelow60.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 47,
+ "fields": {
+  "Name": "washAtOrBelow60Dot",
+  "Description": "Wash this item at with water at 60 degrees or less",
+  "Image": "WashAtOrBelow60Dot.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 48,
+ "fields": {
+  "Name": "washAtOrBelow70Dot",
+  "Description": "Wash this item at with water at 70 degrees or less",
+  "Image": "WashAtOrBelow70Dot.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 49,
+ "fields": {
+  "Name": "washAtOrBelow95",
+  "Description": "Wash this item at with water at 95 degrees or less",
+  "Image": "WashAtOrBelow95.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 50,
+ "fields": {
+  "Name": "washAtOrBelow95Dot",
+  "Description": "Wash this item at with water at 95 degrees or less",
+  "Image": "WashAtOrBelow95Dot.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 51,
+ "fields": {
+  "Name": "wetClean",
+  "Description": "This item can be wet cleaned with water",
+  "Image": "WetClean.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 52,
+ "fields": {
+  "Name": "wetCleanDelicate",
+  "Description": "When wet cleaning, ensure the machine is configured to delicates",
+  "Image": "WetCleanDelicate.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 53,
+ "fields": {
+  "Name": "wetCleanVeryDelicate",
+  "Description": "When wet cleaning, ensure the machine is configured to VERY delicate",
+  "Image": "WetCleanVeryDelicate.png"
+ }
+},
+{
+ "model": "data.data",
+ "pk": 54,
+ "fields": {
+  "Name": "wring",
+  "Description": "You can wring this item of clothing when drying",
+  "Image": "wring.png"
+ }
+}
+]
