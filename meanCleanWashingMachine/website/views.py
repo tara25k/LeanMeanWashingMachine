@@ -3,6 +3,12 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import  render, redirect
 from django.core.files.storage import FileSystemStorage
 from data.models import Data
+from skimage import color
+from skimage import io
+
+
+
+
 
 global urlName
 global title
@@ -13,9 +19,13 @@ def upload(request):
         upload = request.FILES['upload']
         title = request.POST['title']
         print(title)
+
         fss = FileSystemStorage()
         file = fss.save(upload.name, upload)
         file_url = fss.url(file)
+        with Image(filename=file_url) as img:
+            img.colorspace = 'gray'
+            img.save(filename='logo_gray.jpg')
         urlName = str(file_url)
         return redirect('success')
     return render(request, 'website/uploadPage.html')
