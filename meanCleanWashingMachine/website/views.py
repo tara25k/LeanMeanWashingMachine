@@ -27,8 +27,5 @@ def success(request):
     for title in titleArray:
         foundObject = Data.objects.filter(Name=title)
         descriptionArray.append(foundObject.first().Description)
-    return render(request, 'website/success.html', {'descriptionArray': descriptionArray})
+    return render(request, 'website/uploadPage.html', {'descriptionArray': descriptionArray, 'successMessage':"Successfully Uploaded", 'link': 'http://127.0.0.1:8000'})
 
-
-def successPage(request):
-    return HttpResponseRedirect('Success')

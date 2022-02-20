@@ -1,24 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../style.css">
+    <title>Lean Mean Washing Machine</title>
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+<body>
 {% extends 'base.html' %}
 {% block loadStatic %}{% load static %}{%endblock%}
 {% block title %} Home {% endblock %}
 
 {% block content %}
 
-    <p>Here, you can upload a picture of your care tag that we can identify:</p>
-
+  
         <div class="container">
 
-          <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-              <label for="title">Title:</label><input type="text" name="title"><br>
-                <input type="file" name="upload" accept="image/*">
-                <br>
-                <button type="submit">Submit</button>
-          </form>
+          
 
           <!--See Image Uploaded-->
-          <h2>Image</h2>
-          <div >
+          <!--
+          <div>
             {% if file_url %}
             <div>
               <img style='height:100px;' src="{{ file_url }}" class="img-fluid">
@@ -28,5 +33,81 @@
             <p>Nothing Uploaded.</p>
             {% endif %}
           </div>
+        </div>
+      </div>-->
+      <div class=center>
+        <b>Lean Mean Washing Machine</b>
+    </div>
+    <br>
+        
+    
+        <div class="split left">
+            <div class="centered">
+                <section>
+                    <br><br><br><br>
+                    <div class="font">
+                    <div class="round">
+                        This web app will aid you in your laundry quarrels
+                    </div>
+    
+                    <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <br><br>
+              <label for="title">Title:</label><input type="text" name="title"><br>
+                <input type="file" name="upload" accept="image/*">
+                <br>
+                <button type="submit">Submit</button>
+          </form>
+                    </div>
+                </section>
+            </div>
+          </div>
+          
+        <div class="split right">
+          <div class="centered">
+            <div class="font">
+              <div class="round">
+          <header class="masthead">
+            
+            <div class="container">
+                <div class="masthead-subheading">{{successMessage}}<br><br></div>
+                
+            </header>
+                  <!--See Image Uploaded-->
+                  
+          
+                {% for description in descriptionArray %}
+                Here's what it means: <br><br>
+                {{description}}
+                {% endfor %}
+                <br><br>
+                <button onclick="history.back()">Go Back</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        </body>
+      
 
+
+<div class="fixed">
+<div class="header">
+    
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>    
+    </div>
+    </div>
 <svg id='wave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,192L26.7,192C53.3,192,107,192,160,170.7C213.3,149,267,107,320,101.3C373.3,96,427,128,480,122.7C533.3,117,587,75,640,90.7C693.3,107,747,181,800,213.3C853.3,245,907,235,960,192C1013.3,149,1067,75,1120,80C1173.3,85,1227,171,1280,181.3C1333.3,192,1387,128,1413,96L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>{% endblock %}
+</body>
