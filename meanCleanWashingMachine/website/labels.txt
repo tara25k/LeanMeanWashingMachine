@@ -1,0 +1,16 @@
+0 Wash at or below 30
+1 Wash at or below 40
+2 Do not bleach
+3 Tumble dry medium temp
+4 Iron low temp
+5 Do not dry clean
+6 Do not tumble dry
+7 Do not iron
+8 Handwash
+9 Drip Dry
+10 Tumble dry low temp
+11 Dry Clean
+12 Iron medium temp
+13 Do not machine wash
+14 Bleach
+15 Dry Flat
