@@ -57,7 +57,7 @@
  "model": "data.data",
  "pk": 10,
  "fields": {
-  "Name": "doNotTrumbleDry",
+  "Name": "doNotTumbleDry",
   "Description": "Do not use a tumble dryer to dry this piece of clothing",
   "Image": "DoNotTumbleDry.png"
  }

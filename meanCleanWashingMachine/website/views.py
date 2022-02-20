@@ -52,26 +52,29 @@ def upload(request):
         fss = FileSystemStorage()
         file = fss.save(upload.name, upload)
         file_url = fss.url(file)
+        urlName = file_url
         img = Image.open(os.path.abspath('media')+'/'+os.path.basename((file_url))).convert('L')
         print(os.path.abspath('media')+'/'+os.path.basename((file_url)))
         title = tensorModel(os.path.abspath('media')+'/'+os.path.basename((file_url)))
 
-        img.save(os.path.abspath('grey')+'/'+os.path.basename(file_url))
+        img.save(os.path.abspath('website')+'/static/'+os.path.basename(file_url))
         urlName = str(file_url)
         return redirect('success')
-    return render(request, 'website/uploadPage.html')
+    return render(request, 'website/uploadPage.html', {'displayMessage':'none'})
 
 def success(request):
     global title
     titleArray = title.split(',')
     descriptionArray = []
+    imageUrl = os.path.basename((urlName))
+    print(imageUrl)
     for title in titleArray:
         foundObject = Data.objects.filter(Name=title)
         descriptionArray.append(foundObject.first().Description)
     #if mobileNumber:
      #   return redirect('postData')
     #else:
-    return render(request, 'website/uploadPage.html', {'descriptionArray': descriptionArray, 'successMessage':"Successfully Uploaded", 'link': 'http://127.0.0.1:8000'})
+    return render(request, 'website/uploadPage.html', {'descriptionArray': descriptionArray,'displayMessage':'#','successMessage':"Successfully Uploaded", 'link': 'http://127.0.0.1:8000', 'imageUrl':imageUrl})
 
 def postData(request):
     global mobileNumber
